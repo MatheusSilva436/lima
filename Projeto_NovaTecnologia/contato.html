@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Nova Tecnologia Informática</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"
+    <link rel="stylesheet" href="css/syle.css">
+    <script defer src="js/new.js"></script>
+
+</head>
+<body>
+     <!--Cabeçalho-->
+    <header role="banner">
+        <nav role="navigation" aria-label="Menu principal">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo da empresa Nova Tecnologia Informática">
+                </div>
+                <div class="nome">
+                <h2>Nova Tecnologia Informática</h2>
+            </div>
+            
+            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">&#8801</button>
+            <ul id="menu-toggle" class="menu" role="navigation" aria-labelledby="menu-toggle">
+                <li><a href="index.html" tabindex="0">Início</a></li>
+                <li><a href="sobre.html" tabindex="0">Sobre</a></li>
+                <li><a href="servicos.html" tabindex="0">Serviços</a></li>
+                <li><a href="contato.html" tabindex="0">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content" role="form" aria-labelledby="contato-form">
+            <h2 id="contato-form">Entre em contato</h2>
+            <p>Preencha o formulário abaixo ou entre em contato por telefone ou e-mail.</p>
+            <form class="contact-form" aria-describedby="formulario-contato-desc">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <imput type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required aria-required="true" aria-describedby="nome-ajuda" tabindex="0">
+                    <span id="nome-ajuda" class="sr-only">Por favor, insira seu nome completo.</span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <imput type="email" id="email" name="email" placeholder="Digite seu email" required aria-required="true" aria-describedby="email" tabindex="0">
+                    <span id="email-ajuda" class="sr-only">Digite um email válido.</span>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <imput type="tel" id="nome" name="telefone" placeholder="(99) 99999-9999" required aria-required="true" aria-describedby="telefone" tabindex="0">
+                    <span id="telefone-ajuda" class="sr-only">Insira o seu telefone no formato (99) 99999-9999.</span>
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Telefone</label>
+                    <select id="assunto" name="assunto" required aria-required="true" tabindex="0">
+                        <option value="">Selecione um assunto</option>
+                        <option value="suporte">Suporte Técnico</option>
+                        <option value="desenvolvimento">Desenvolvimento de Software</option>
+                        <option value="consultoria">Consultoria em TI</option>
+                        <option value="Infraestrutura">Infraestrutura de TI</option>
+                        <option value="orcamento">Orçamento</option>
+                        <option value="duvida">Dúvidas Gerais</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" required aria-required="true" aria-describedby="mensagem-ajuda" tabindex="0"></textarea>
+                    <span id="mensagem-ajuda" class="sr-only">Descreva sua dúvida ou solicitação</span>
+                </div>
+                <button type="submit" class="btn-submit" aria-label="Enviar mensagem">
+                    Enviar Mensagem
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
