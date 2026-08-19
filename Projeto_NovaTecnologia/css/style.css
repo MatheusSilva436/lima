@@ -47,6 +47,10 @@ header nav ul li a{
 .logo{
     display: flex;
 }
+.logo img{
+    width: 20%;
+    border-radius: 100%;
+}
 .nome{
     width: 70%;
     margin-left: 2px;
@@ -78,9 +82,9 @@ header nav ul li a{
     padding: 30px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0,0,0 0.1);
-}
+    }
 .carousel-item img{
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     margin-right: 1px;
     border-radius: 8px;
@@ -184,7 +188,7 @@ footer{
     display: flex;
     align-items: center;
     gap: 10px;
-    box-shadow: 2px 2px 5px rgba(0,0,0 1)
+    box-shadow: 2px 2px 5px rgba(0,0,0 2.2)
 }
 .content-item ul li::before{
     /*content: "✔️";*/
@@ -195,10 +199,9 @@ footer{
 img{
     max-width: 100%;
 }
-
-/*Responsividade para teclas menores*/
- @media (max-width: 768px){
-    /*No carrossel, empilhar imagem e texto*/
+ 
+@media (max-width: 768px){
+    /*No carrosel, empilhar imagem e texto*/
     .carousel-item{
         flex-direction: column;
         text-align: center;
@@ -206,33 +209,35 @@ img{
     .carousel-item img{
         margin-bottom: 20px;
         max-width: 90%;
+        }
     }
- }
- /*Menu responsivo*/
- .menu-toggle{
+/*Menu responsivo*/
+.menu-toogle{
     display: none;
     font-size: 24px;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
- }
- @media (max-width: 768px){
-    .menu-toggle{
+}
+@media (max-width: 768px){
+    .menu-toogle{
         display: block;
+ 
     }
- }
- /*Esconde o menu por padrão e exibe quando ativado*/
- .menu{
+/*Esconde o menu por padrão e exibe quando ativado*/
+.menu{
     display: none;
     flex-direction: column;
     background: #005a8d;
     width: 100%;
     text-align: center;
- }
- .menu.show{
+ 
+}
+.menu.show{
     display: flex;
- }
- .menu li{
-    padding: 10px;
- }
+}
+.menu li{
+    padding: 10px
+}}
+ 

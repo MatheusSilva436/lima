@@ -4,22 +4,23 @@
     gap: 20px;
     justify-content: center;
 }
-.servico{
+.servico {
     width: 300px;
     background: #f9f9f9;
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
 }
-.servico img{
+.servico img {
     width: 100%;
     border-radius: 5px;
 }
-.servico h3{
+.servico h3 {
     margin: 10px 0;
     color: #333;
 }
-.servico p{
+.servico p {
     font-size: 14px;
-    color: #666;
+    color:#666;
 }
