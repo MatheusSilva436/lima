@@ -3,5 +3,5 @@ const menuToggle = document.getElementById("menu-toogle");
 const menu = document.getElementById("menu");
 
 menuToggle.addEventListener("click", () => {
-    menu.classList.toogle("show")
+    menu.classList.toogle("show");
 });

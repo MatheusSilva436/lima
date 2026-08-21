@@ -3,7 +3,7 @@
     margin: auto;
     padding: 20px;
     background: #f9f9f9;
-    border-radius: 15px;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .form-group{
@@ -36,10 +36,4 @@ textarea{
 }
 .btn-submit:hover{
     background: #3c80c9;
-}
-.menu.show{
-    display: flex;
-}
-.menu li{
-    padding: 10px;
 }
